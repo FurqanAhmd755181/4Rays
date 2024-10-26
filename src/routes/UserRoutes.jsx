@@ -18,15 +18,6 @@ const UserRoutes = [
         path: "/about",
         element: <AboutPage />,
     },
-
-    {
-        path: "/signin",
-        element: <SignInPage />,
-    },
-{
-        path: "/signup",
-        element: <SignUpPage/>,
-    },
     {
         path: "/cart",
         element: <Cart />

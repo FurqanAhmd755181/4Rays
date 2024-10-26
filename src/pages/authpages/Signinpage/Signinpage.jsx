@@ -5,6 +5,7 @@ import { FaUser, FaLock } from 'react-icons/fa';
 import logo from "../../../assets/logo.png"
 import blood from "../../../assets/signupblood.png";
 import group from "../../../assets/Group.png";
+import { Link } from 'react-router-dom';
 
 const SignInPage = () => {
   return (
@@ -65,10 +66,11 @@ const SignInPage = () => {
       <input type="checkbox" id="staySignedIn" className="mr-2" />
       <label htmlFor="staySignedIn" className="text-gray-600">Stay signed in</label>
     </div>
-
+<Link to="/">
     <button type="submit" className="w-full py-2 bg-red-600 text-white font-bold rounded-md hover:bg-red-700">
       Sign in
     </button>
+    </Link>
   </form>
 
   <p className="text-center mt-4 text-gray-600">

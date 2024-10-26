@@ -29,19 +29,26 @@ const Navbar = () => {
         </nav>
 
         <div className="flex items-center gap-3 relative">
-          <div className="flex items-center gap-2 cursor-pointer" onClick={toggleLanguageDropdown}>
+          <div
+            className="flex items-center gap-2 cursor-pointer"
+            onClick={toggleLanguageDropdown}
+          >
             <p>{selectedLanguage === "English" ? "Eng" : "Spa"}</p>
             <FaChevronDown />
           </div>
 
           {showLanguageDropdown && (
+
             <Popup
               selectedLanguage={selectedLanguage}
               selectLanguage={selectLanguage}
             />
+
           )}
           <span>
-            <FiShoppingCart size={20} color="#BC1E2D" />
+            <Link to="/cart">
+              <FiShoppingCart size={20} color="#BC1E2D" />
+            </Link>
           </span>
           <span>
             <LuUser2 size={20} color="#BC1E2D" />
