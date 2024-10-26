@@ -5,7 +5,7 @@ import FAQSection from './component/FAQSection'
 import CallToAction from './component/CallToAction'
 import VideoPresentation from './component/VideoPresentation'
 
-export const PricingPage = () => {
+export default  PricingPage = () => {
   return (
     <div className='flex-col lg:flex-col p-10 items-center justify-center'>
 <div>
