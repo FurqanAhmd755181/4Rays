@@ -36,15 +36,15 @@ export const CTASection = () => {
     </div>
 
     {/* Image Section */}
-    <div className="flex-1 flex justify-center h-full relative">
+    <div className="flex-1 flex justify-center h-full relative items-center">
   {/* Background box (full height and straight) */}
-  <div className="bg-[#BC1E2D] w-[800px] h-[400px]   " />
+  <div className="bg-[#BC1E2D] w-[400px] h-[200px]  lg:max-w-screen-sm [400px] lg:h-[400px] " />
 
   {/* Laptop image (slightly smaller and positioned outside the background) */}
   <img
     src={pic} // Replace with your laptop image path
     alt="4 Rays AI on laptop"
-    className=" z-10 w-[70%] md:w-[50%] mr-[70%] absolute  lg:mr-[50%] translate-y-6  shadow-lg"
+    className=" z-10 w-[70%] md:w-[50%] mr-[70%] absolute  lg:mr-[50%] lg:w-[40%]    translate-y-6  shadow-lg"
   />
 </div></div>
   )
