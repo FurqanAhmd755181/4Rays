@@ -44,7 +44,7 @@ export const CTASection = () => {
   <img
     src={pic} // Replace with your laptop image path
     alt="4 Rays AI on laptop"
-    className=" z-10 w-[70%] md:w-[50%] mr-[70%] absolute  lg:mr-[50%] lg:w-[40%]    translate-y-6  shadow-lg"
+    className=" z-10 w-[70%] md:w-[50%] mr-[70%] absolute  lg:mr-[50%] lg:w-[70%]    translate-y-6  shadow-lg"
   />
 </div></div>
   )

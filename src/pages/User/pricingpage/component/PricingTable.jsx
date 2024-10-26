@@ -3,8 +3,8 @@ import React from 'react'
 export const PricingTable = () => {
   return (
     <div className="flex flex-col items-center bg-gray-50 py-16 px-6 md:px-16 lg:px-32">
-    <h1 className="text-3xl font-bold text-center mb-8">
-      Make <span className="text-red-500">teamwork</span> more productive
+    <h1 className="text-5xl font-bold text-center mb-8 " >
+      Make <span className="text-[#C10A28]">teamwork</span> more productive
     </h1>
     <div className="flex flex-col md:flex-row gap-8 justify-center">
       
