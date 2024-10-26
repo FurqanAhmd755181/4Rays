@@ -4,7 +4,7 @@ import trademark from "../../../assets/trademark.png";
 import AboutPageCard from "./AboutPageCard.jsx";
 import rounded_background_splash from "../../../assets/rounded-backgroud-splash.png";
 import {FaPlay} from "react-icons/fa";
-
+import robot from "../../../assets/robot.png";
 
 function AboutPage() {
     return (
@@ -57,7 +57,8 @@ function AboutPage() {
             </div>
 
 
-            <div className="px-48 mt-32 flex justify-between gap-12 ">
+            <div className="relative px-48 mt-32 flex justify-between gap-12 ">
+                <img src={robot} className="absolute right-[20px] top-[200px]"  alt="Generic Logo" />
                 <div className="basis-2/4">
                     <p className="leading-10 text-black text-[45px] font-semibold">Building the digital-first ecosystem for
                         work</p>
