@@ -1,4 +1,4 @@
-import { PricingPage } from "./pages/Pricingpage";
+import { PricingPage } from "./pages/pricingpage/PricingPage";
 
 
 function App() {
