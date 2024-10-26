@@ -1,5 +1,6 @@
 import LandingPage from "../pages/User/LandingPage/LandingPage.jsx";
-import PricingPage from "../pages/pricingpage/PricingPage.jsx";
+import PricingPage from "../pages/User/pricingpage/PricingPage.jsx";
+
 
 const UserRoutes = [
     {
@@ -7,8 +8,8 @@ const UserRoutes = [
         element: <LandingPage />,
     },
     {
-        path: "/pricing",
-        element: <PricingPage />,
+        path: "pricing/",
+        element: <PricingPage  />,
     }
 ]
 
