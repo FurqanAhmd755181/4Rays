@@ -1,8 +1,7 @@
 // Popup.jsx
 import React from "react";
 import { FaCheck } from "react-icons/fa6";
-import EngFlag from "/src/assets/eng.png";
-import SpaFlag from "/src/assets/spanish.png";
+
 
 const Popup = ({ selectedLanguage, selectLanguage }) => {
   return (
