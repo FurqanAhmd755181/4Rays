@@ -1,10 +1,10 @@
 import logo_ipsum  from "../../../assets/logoipsum.png";
 import company_generic from "../../../assets/company-generic.png";
-import trademark from "../../../assets/trademark.png";
+import trademark from "../../../assets/trademarksvg.svg";
 import AboutPageCard from "./AboutPageCard.jsx";
 import rounded_background_splash from "../../../assets/rounded-backgroud-splash.png";
 import {FaPlay} from "react-icons/fa";
-import robot from "../../../assets/robot.png";
+import robot from "../../../assets/robosvg.svg";
 
 function AboutPage() {
     return (
