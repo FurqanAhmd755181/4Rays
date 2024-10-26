@@ -34,7 +34,7 @@ const Popup = ({ selectedLanguage, selectLanguage }) => {
             onClick={() => selectLanguage("Spanish")}
             style={{ color: "#191C1F" }} // Active color for Spanish
           >
-            <img src={SpaFlag} alt="Spanish" className="w-4 h-4" />
+            <img src="/spanish.svg" alt="Spanish" className="w-4 h-4" />
             Spanish
             <FaCheck className="text-[#BC1E2D] ml-auto" />
           </p>
@@ -43,7 +43,7 @@ const Popup = ({ selectedLanguage, selectLanguage }) => {
             onClick={() => selectLanguage("English")}
             style={{ color: "#5F6C72" }} // Inactive color for English
           >
-            <img src={EngFlag} alt="English" className="w-4 h-4" />
+            <img src="/eng.svg" alt="English" className="w-4 h-4" />
             English
           </p>
         </>
