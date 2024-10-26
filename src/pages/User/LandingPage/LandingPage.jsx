@@ -1,9 +1,13 @@
+import HeroSection from "./HeroSection";
+import Parteners from "./Parteners";
+
 function LandingPage() {
-    return (
-        <div>
-            <h1>The Landing Page</h1>
-        </div>
-    );
+  return (
+    <div>
+      <HeroSection />
+      <Parteners />
+    </div>
+  );
 }
 
 export default LandingPage;
