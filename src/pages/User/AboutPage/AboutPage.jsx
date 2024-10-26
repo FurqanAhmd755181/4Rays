@@ -1,10 +1,10 @@
 import logo_ipsum  from "../../../assets/logoipsum.png";
 import company_generic from "../../../assets/company-generic.png";
-import trademark from "../../../assets/trademark.png";
+import trademark from "../../../assets/trademarksvg.svg";
 import AboutPageCard from "./AboutPageCard.jsx";
 import rounded_background_splash from "../../../assets/rounded-backgroud-splash.png";
 import {FaPlay} from "react-icons/fa";
-
+import robot from "../../../assets/robosvg.svg";
 
 function AboutPage() {
     return (
@@ -57,7 +57,8 @@ function AboutPage() {
             </div>
 
 
-            <div className="px-48 mt-32 flex justify-between">
+            <div className="relative px-48 mt-32 flex justify-between gap-12 ">
+                <img src={robot} className="absolute right-[20px] top-[200px]"  alt="Generic Logo" />
                 <div className="basis-2/4">
                     <p className="leading-10 text-black text-[45px] font-semibold">Building the digital-first ecosystem for
                         work</p>
@@ -115,7 +116,7 @@ function AboutPage() {
             <div className="relative mt-32">
                 <img src={rounded_background_splash} alt="Generic Logo" className="w-full"/>
                 <div className="absolute inset-0 flex flex-col items-center justify-center">
-                    <p className="text-center text-white text-[45px] font-bold max-w-[600px]">Whatever work you do, you
+                    <p className="text-center text-white text-[54px] font-bold max-w-[600px]">Whatever work you do, you
                         can
                         do it in <span className="text-[#C10A28]">4 Rays</span></p>
                     <div className="flex gap-6 items-center justify-center">
