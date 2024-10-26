@@ -1,11 +1,10 @@
-import React from 'react'
 import { PricingTable } from './component/PricingTable'
 import { CTASection } from './component/CTASection'
 import FAQSection from './component/FAQSection'
 import CallToAction from './component/CallToAction'
 import VideoPresentation from './component/VideoPresentation'
 
-export default  PricingPage = () => {
+const PricingPage = () => {
   return (
     <div className='flex-col lg:flex-col p-10 items-center justify-center'>
 <div>
@@ -34,3 +33,5 @@ export default  PricingPage = () => {
   
   )
 }
+
+export default PricingPage;
