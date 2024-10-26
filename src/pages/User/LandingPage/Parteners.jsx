@@ -4,6 +4,9 @@ import p2 from "../../../assets/Partner2.png";
 import p3 from "../../../assets/Partner3.png";
 import crypto from "../../../assets/Crypto.png";
 import { GiCartwheel } from "react-icons/gi";
+import { TiArrowLeftThick } from "react-icons/ti";
+import { TiArrowRightThick } from "react-icons/ti";
+
 const Parteners = () => {
   return (
     <div className="pl-44 flex flex-col gap-6">
@@ -18,7 +21,7 @@ const Parteners = () => {
         </div>
       </div>
       <div>
-        <h3 className="text-[30px] font-[700] text-center">
+        <h3 className="text-[30px] font-extrabold  text-center">
           Lorem ipsum <span className="text-[#C10A28] "> dolor</span> sit amet,
           const
         </h3>
@@ -71,6 +74,17 @@ const Parteners = () => {
           </p>
         </div>
       </div>
+      <div className="flex gap-4 self-end px-[15rem]">
+      {/* Left Arrow Button */}
+      <button className="w-12 h-12 flex items-center justify-center rounded-full bg-white shadow-md">
+        <TiArrowLeftThick className="text-red-500 text-xl" />
+      </button>
+
+      {/* Right Arrow Button */}
+      <button className="w-12 h-12 flex items-center justify-center rounded-full bg-black shadow-md">
+        <TiArrowRightThick className="text-white text-xl" />
+      </button>
+    </div>
     </div>
   );
 };
