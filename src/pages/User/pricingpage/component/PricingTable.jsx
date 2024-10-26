@@ -9,11 +9,11 @@ export const PricingTable = () => {
     <div className="flex flex-col md:flex-row gap-8 justify-center">
       
       {/* Basic Plan */}
-      <div className="bg-white shadow-lg rounded-lg p-6 w-full md:w-1/3 border border-gray-200">
+      <div className="bg-white shadow-lg rounded-lg p-6 w-full md:w-1/3 border border-gray-300">
         <h2 className="text-xl font-semibold text-gray-800">Basic</h2>
         <p className="text-gray-500 mb-4">The quickest and easiest way to try</p>
         <p className="text-4xl font-bold mb-4">$25 <span className="text-base font-normal">USD/mo</span></p>
-        <button className="bg-transparent text-red-500 border border-red-500 py-2 px-4 rounded-lg w-full font-semibold mb-6 hover:bg-red-500 hover:text-white">
+        <button className="bg-transparent text-[#BC1E2D] border border-[#BC1E2D] py-2 px-4 rounded-lg w-full font-semibold mb-6 hover:bg-red-500 hover:text-white">
           GET STARTED
         </button>
         <ul className="text-sm text-gray-600 space-y-2">
@@ -34,11 +34,13 @@ export const PricingTable = () => {
       </div>
 
       {/* Advance Plan */}
-      <div className="bg-white shadow-lg rounded-lg p-6 w-full md:w-1/3 border border-red-500">
+      <div className="bg-white shadow-lg rounded-lg  w-full md:w-1/3 border border-gray-300">
+      <div className='bg-[#BC1E2D] rounded-t-lg  mt-[-18px]    h-8 flex justify-center items-center text-[22px] text-white  '>Best value</div>
+<div className='p-6'>
         <h2 className="text-xl font-semibold text-gray-800">Advance</h2>
         <p className="text-gray-500 mb-4">More power for small teams who want better collaboration</p>
         <p className="text-4xl font-bold mb-4">$50 <span className="text-base font-normal">USD/mo</span></p>
-        <button className="bg-red-500 text-white py-2 px-4 rounded-lg w-full font-semibold mb-6 hover:bg-red-600">
+        <button className="bg-[#BC1E2D] text-white py-2 px-4 rounded-lg w-full font-semibold mb-6 hover:bg-red-600">
           GET STARTED
         </button>
         <ul className="text-sm text-gray-600 space-y-2">
@@ -57,13 +59,13 @@ export const PricingTable = () => {
           <li className="text-gray-300">Built-in employee directory</li>
         </ul>
       </div>
-
+      </div>
       {/* Professional Plan */}
-      <div className="bg-white shadow-lg rounded-lg p-6 w-full md:w-1/3 border border-gray-200">
+      <div className="bg-white shadow-lg rounded-lg p-6 w-full md:w-1/3 border border-gray-300">
         <h2 className="text-xl font-semibold text-gray-800">Professional</h2>
         <p className="text-gray-500 mb-4">Scale your business, increase productivity, and keep your teams connected</p>
         <p className="text-4xl font-bold mb-4">$75 <span className="text-base font-normal">USD/mo</span></p>
-        <button className="bg-transparent text-red-500 border border-red-500 py-2 px-4 rounded-lg w-full font-semibold mb-6 hover:bg-red-500 hover:text-white">
+        <button className="bg-transparent text-[#BC1E2D] border border-[#BC1E2D] py-2 px-4 rounded-lg w-full font-semibold mb-6 hover:bg-red-500 hover:text-white">
           GET STARTED
         </button>
         <ul className="text-sm text-gray-600 space-y-2">
@@ -84,5 +86,6 @@ export const PricingTable = () => {
       </div>
     </div>
   </div>
+  
   )
 }

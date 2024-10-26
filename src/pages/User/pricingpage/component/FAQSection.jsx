@@ -19,6 +19,36 @@ function FAQSection() {
         On Enterprise Grid? Reach out to your Slack account executive or contact our Sales team.
       `,
     },
+    {
+      question: "How do I purchase 4 Rays Solution?",
+      answer: `
+        Slack AI is available to purchase as an add-on for all paid plans. Here's how to buy Slack AI:
+        • If you haven’t signed up for Slack, create a workspace to get started. You can upgrade your workspace
+          and purchase the Slack AI add-on at the same time. To do so, select a paid plan and then click With Slack AI.
+        • If you’re on the Pro or Business+ plan, sign in to your account and click Get Slack AI on the Pricing page.
+        On Enterprise Grid? Reach out to your Slack account executive or contact our Sales team.
+      `,
+    },
+    {
+      question: "How do I purchase 4 Rays Solution?",
+      answer: `
+        Slack AI is available to purchase as an add-on for all paid plans. Here's how to buy Slack AI:
+        • If you haven’t signed up for Slack, create a workspace to get started. You can upgrade your workspace
+          and purchase the Slack AI add-on at the same time. To do so, select a paid plan and then click With Slack AI.
+        • If you’re on the Pro or Business+ plan, sign in to your account and click Get Slack AI on the Pricing page.
+        On Enterprise Grid? Reach out to your Slack account executive or contact our Sales team.
+      `,
+    },
+    {
+      question: "How do I purchase 4 Rays Solution?",
+      answer: `
+        Slack AI is available to purchase as an add-on for all paid plans. Here's how to buy Slack AI:
+        • If you haven’t signed up for Slack, create a workspace to get started. You can upgrade your workspace
+          and purchase the Slack AI add-on at the same time. To do so, select a paid plan and then click With Slack AI.
+        • If you’re on the Pro or Business+ plan, sign in to your account and click Get Slack AI on the Pricing page.
+        On Enterprise Grid? Reach out to your Slack account executive or contact our Sales team.
+      `,
+    },
     // Add more FAQs here as needed
   ];
 
@@ -52,6 +82,7 @@ function FAQSection() {
           Get more information on billing at 4 Rays
         </a>
       </div>
+      
     </div>
   );
 }

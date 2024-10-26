@@ -8,18 +8,10 @@ const Navbar = () => {
     <div className="px-44">
       <div className=" px-44 flex items-center justify-center gap-64 border-t-2 border-b-2 border-[#D9D9D9] py-5">
         <nav className="flex items-center gap-20">
-          <Link className="text-[14px] font-[500] hover:text-[#BC1E2D] hover:underline">
-            Features
-          </Link>
-          <Link className="text-[14px] font-[500] hover:text-[#BC1E2D] hover:underline  ">
-            Resources
-          </Link>
-          <Link className="text-[14px] font-[500] hover:text-[#BC1E2D] hover:underline ">
-            Prices
-          </Link>
-          <Link className="text-[14px] font-[500] hover:text-[#BC1E2D]  hover:underline">
-            About
-          </Link>
+          <Link>Features</Link>
+          <Link>Resources</Link>
+          <Link to="/pricing">Prices</Link>
+          <Link>About</Link>
         </nav>
         <div className="flex items-center gap-3">
           <div className="flex items-center gap-2">
