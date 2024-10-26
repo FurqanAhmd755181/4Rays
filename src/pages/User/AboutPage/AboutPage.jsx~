@@ -11,7 +11,7 @@ function AboutPage() {
         <div>
             <div className="px-48 mt-8 flex flex-col items-center">
                 <div className="w-4/6">
-                    <p className="font-bold text-[52px] text-center">Make work life <span
+                    <p className="leading-10 font-bold text-[52px] text-center">Make work life <span
                         className="text-[#C10A28]">simpler</span>,
                         more <span className="text-[#C10A28]">pleasant</span> and more <span
                             className="text-[#C10A28]">productive.</span></p>
