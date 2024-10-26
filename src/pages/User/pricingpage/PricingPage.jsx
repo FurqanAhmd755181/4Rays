@@ -6,7 +6,7 @@ import VideoPresentation from './component/VideoPresentation'
 
 const PricingPage = () => {
   return (
-    <div className='flex-col lg:flex-col p-10 items-center justify-center'>
+    <div className='flex-col lg:flex-col p-7 items-center justify-center'>
 <div>
 <PricingTable/>
 

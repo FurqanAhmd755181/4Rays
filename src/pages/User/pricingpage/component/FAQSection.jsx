@@ -54,8 +54,8 @@ function FAQSection() {
 
   return (
     <div className="max-w-2xl mx-auto my-10 p-6">
-      <h2 className="text-4xl font-bold text-center mb-8">
-        Frequently asked <span className="text-red-600">questions</span>
+      <h2 className="text-5xl font-bold text-center mb-8">
+        Frequently asked <span className="text-[#C10A28]">questions</span>
       </h2>
       {faqs.map((faq, index) => (
         <div key={index} className="border-b border-gray-200 py-4">
