@@ -11,7 +11,7 @@ const Navbar = () => {
           <Link>Features</Link>
           <Link>Resources</Link>
           <Link to="/pricing">Prices</Link>
-          <Link>About</Link>
+          <Link to="/about">About</Link>
         </nav>
         <div className="flex items-center gap-3">
           <div className="flex items-center gap-2">
