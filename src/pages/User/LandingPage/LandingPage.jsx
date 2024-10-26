@@ -1,3 +1,4 @@
+import GetInTouch from "./GetInTouch";
 import HeroSection from "./HeroSection";
 import Newsletter from "./Newsletter";
 import OurFeatures from "./OurFeatures";
@@ -16,6 +17,7 @@ function LandingPage() {
       <Working/>
       <Pricing/>
       <Newsletter/>
+      <GetInTouch/>
     </div>
   );
 }
