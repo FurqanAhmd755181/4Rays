@@ -1,7 +1,7 @@
 import React from "react";
 
-import fourrays from "../assets/FourRays.png";
-import Navbar from "./Navbar";
+import fourrays from "../../../assets/FourRays.png";
+import Navbar from "./Navbar.jsx";
 
 const Header = () => {
   return (
