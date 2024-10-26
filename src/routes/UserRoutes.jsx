@@ -5,7 +5,6 @@ import AccountAuth from "../pages/User/AccountPages/AccountAuth.jsx";
 import MyAccountBody from "../pages/User/AccountPages/MyAccountBody.jsx";
 import SignInPage from "../pages/authpages/Signinpage/Signinpage.jsx";
 import SignUpPage from "../pages/authpages/Signuppage/SignUpPage.jsx";
-import { Cart } from "../pages/User/Cart.jsx";
 
 const UserRoutes = [
 
@@ -22,20 +21,13 @@ const UserRoutes = [
         element: <AboutPage />,
     },
     {
-        path: "/cart",
-        element: <Cart />
-    }
-    ,
-    {
         path: "/Signup",
         element: <AccountAuth/>,
-    }
-    ,
+    },
     {
         path : "/MyAccount",
         element : <MyAccountBody />
     }
-
 ]
 
 export default UserRoutes;
