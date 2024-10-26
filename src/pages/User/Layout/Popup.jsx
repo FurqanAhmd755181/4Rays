@@ -1,34 +1,53 @@
-import React, { useState } from 'react';
-import { FaChevronDown } from 'react-icons/fa';
+// Popup.jsx
+import React from "react";
+import { FaCheck } from "react-icons/fa";
+import EngFlag from "/src/assets/eng.png";
+import SpaFlag from "/src/assets/spanish.png";
 
-const Popup = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleDropdown = () => {
-    setIsOpen(!isOpen);
-  };
-
+const Popup = ({ selectedLanguage, selectLanguage }) => {
   return (
-    <div className="relative inline-block">
-      <div 
-        className="flex items-center gap-2 cursor-pointer" 
-        onClick={toggleDropdown}
-      >
-        <p>Eng</p>
-        <FaChevronDown />
-      </div>
-
-      {isOpen && (
-        <div className="absolute mt-2 w-44 bg-white rounded-lg shadow-lg z-10">
-          <div className="flex items-center w-full h-9 px-3 cursor-pointer hover:bg-gray-100">
-            <img src="path/to/english-flag.png" alt="English" className="w-5 h-5 mr-2" />
-            <p>English</p>
-          </div>
-          <div className="flex items-center w-full h-9 px-3 cursor-pointer hover:bg-gray-100">
-            <img src="path/to/spanish-flag.png" alt="Spanish" className="w-5 h-5 mr-2" />
-            <p>Spanish</p>
-          </div>
-        </div>
+    <div className="absolute shadow-[4px_4px_10px_rgba(188,30,45,0.1)] top-full mt-8 right-14 bg-white w-[180px] shadow-md">
+      {/* Display the active language on top */}
+      {selectedLanguage === "English" ? (
+        <>
+          <p
+            className="flex items-center gap-2 h-[36px] cursor-pointer p-2"
+            onClick={() => selectLanguage("English")}
+            style={{ color: "#191C1F" }} // Active color for English
+          >
+            <img src={EngFlag} alt="English" className="w-4 h-4" />
+            English
+            <FaCheck className="text-[#BC1E2D] ml-auto" />
+          </p>
+          <p
+            className="flex items-center gap-2 h-[36px] cursor-pointer p-2"
+            onClick={() => selectLanguage("Spanish")}
+            style={{ color: "#5F6C72" }} // Inactive color for Spanish
+          >
+            <img src={SpaFlag} alt="Spanish" className="w-4 h-4" />
+            Spanish
+          </p>
+        </>
+      ) : (
+        <>
+          <p
+            className="flex items-center gap-2 h-[36px] cursor-pointer p-2"
+            onClick={() => selectLanguage("Spanish")}
+            style={{ color: "#191C1F" }} // Active color for Spanish
+          >
+            <img src={SpaFlag} alt="Spanish" className="w-4 h-4" />
+            Spanish
+            <FaCheck className="text-[#BC1E2D] ml-auto" />
+          </p>
+          <p
+            className="flex items-center gap-2 h-[36px] cursor-pointer p-2"
+            onClick={() => selectLanguage("English")}
+            style={{ color: "#5F6C72" }} // Inactive color for English
+          >
+            <img src={EngFlag} alt="English" className="w-4 h-4" />
+            English
+          </p>
+        </>
       )}
     </div>
   );
