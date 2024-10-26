@@ -5,10 +5,11 @@ import { FaUser, FaLock, FaEnvelope } from 'react-icons/fa';
 import logo from "../../../assets/logo.png"
 import blood from "../../../assets/signupblood.png";
 import group from "../../../assets/Group.png";
+import { Link } from 'react-router-dom';
 
 const SignUpPage = () => {
   return (
-    <div className="flex items-center justify-center h-screen bg-black relative mt-5">
+    <div className="flex items-center justify-center h-screen bg-black relative ">
       <img src={blood} alt="Background" className="h-full absolute mr-[90%] brightness-80 contrast-300" />
 
       {/* Background design */}
@@ -63,9 +64,11 @@ const SignUpPage = () => {
             <label htmlFor="agreeToTerms" className="text-gray-600">I agree to the <a href="/terms" className="text-red-500 hover:underline">terms and conditions</a></label>
           </div>
 
-          <button type="submit" className="w-full py-2 bg-red-600 text-white font-bold rounded-md hover:bg-red-700">
-            Create Account
-          </button>
+          <Link to="/">
+    <button type="submit" className="w-full py-2 bg-red-600 text-white font-bold rounded-md hover:bg-red-700">
+      Create account
+    </button>
+    </Link>
         </form>
       </div>
 
