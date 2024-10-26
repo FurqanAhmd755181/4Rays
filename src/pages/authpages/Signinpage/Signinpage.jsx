@@ -8,7 +8,7 @@ import group from "../../../assets/Group.png";
 
 const SignInPage = () => {
   return (
-    <div className="flex items-center justify-center h-screen bg-black relative">
+    <div className="flex items-center justify-center h-screen bg-black relative mt-5">
 
 <img src={blood} alt="Logo" className=" h-full  absolute mr-[90%] brightness-80 contrast-300 " />
 

@@ -8,7 +8,7 @@ import group from "../../../assets/Group.png";
 
 const SignUpPage = () => {
   return (
-    <div className="flex items-center justify-center h-screen bg-black relative">
+    <div className="flex items-center justify-center h-screen bg-black relative mt-5">
       <img src={blood} alt="Background" className="h-full absolute mr-[90%] brightness-80 contrast-300" />
 
       {/* Background design */}
