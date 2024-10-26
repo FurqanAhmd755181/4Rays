@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { FaChevronDown } from "react-icons/fa";
 import { FiShoppingCart } from "react-icons/fi";
 import { LuUser2 } from "react-icons/lu";
+import AccountAuth from "../AccountPages/AccountAuth";
 const Navbar = () => {
   return (
     <div className="px-44">
@@ -23,9 +24,10 @@ const Navbar = () => {
           <span>
             <FiShoppingCart size={20} color="#BC1E2D" />
           </span>
-          <span>
+          <Link to="/Signup" ><span>
             <LuUser2 size={20} color="#BC1E2D" />
-          </span>
+          </span></Link>
+          
         </div>
       </div>
     </div>
