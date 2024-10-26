@@ -1,4 +1,4 @@
-import LandingPage from "../pages/User/LandingPage.jsx";
+import LandingPage from "../pages/User/LandingPage/LandingPage.jsx";
 import PricingPage from "../pages/pricingpage/PricingPage.jsx";
 
 const UserRoutes = [
