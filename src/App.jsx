@@ -1,9 +1,13 @@
+import Footer from "./LandingPage/Footer";
+import Header from "./LandingPage/Header";
+
 function App() {
-    return (
-        <div>
-            <p className="text-red-600">Hello</p>
-        </div>
-    );
+  return (
+    <div>
+      <Header />
+      <Footer />
+    </div>
+  );
 }
 
 export default App;
