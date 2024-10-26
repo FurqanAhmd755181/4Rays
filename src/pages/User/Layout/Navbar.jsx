@@ -32,7 +32,10 @@ const Navbar = () => {
         </nav>
 
         <div className="flex items-center gap-3 relative">
-          <div className="flex items-center gap-2 cursor-pointer" onClick={toggleLanguageDropdown}>
+          <div
+            className="flex items-center gap-2 cursor-pointer"
+            onClick={toggleLanguageDropdown}
+          >
             <p>{selectedLanguage === "English" ? "Eng" : "Spa"}</p>
             <FaChevronDown />
           </div>
@@ -45,7 +48,9 @@ const Navbar = () => {
               >
                 <img src={EngFlag} alt="English" className="w-4 h-4" />
                 English
-                {selectedLanguage === "English" && <FaCheck className="text-[#BC1E2D] ml-auto" />}
+                {selectedLanguage === "English" && (
+                  <FaCheck className="text-[#BC1E2D] ml-auto" />
+                )}
               </p>
               <p
                 className="flex items-center gap-2 h-[36px] cursor-pointer text-[#5F6C72] hover:bg-gray-100 p-2"
@@ -53,12 +58,16 @@ const Navbar = () => {
               >
                 <img src={SpaFlag} alt="Spanish" className="w-4 h-4" />
                 Spanish
-                {selectedLanguage === "Spanish" && <FaCheck className="text-[#BC1E2D] ml-auto" />}
+                {selectedLanguage === "Spanish" && (
+                  <FaCheck className="text-[#BC1E2D] ml-auto" />
+                )}
               </p>
             </div>
           )}
           <span>
-            <FiShoppingCart size={20} color="#BC1E2D" />
+            <Link to="/cart">
+              <FiShoppingCart size={20} color="#BC1E2D" />
+            </Link>
           </span>
           <span>
             <LuUser2 size={20} color="#BC1E2D" />
