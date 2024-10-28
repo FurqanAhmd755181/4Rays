@@ -4,10 +4,12 @@ import { FaChevronDown } from "react-icons/fa";
 import { FiShoppingCart } from "react-icons/fi";
 import { LuUser2 } from "react-icons/lu";
 import Popup from "./Popup";
+import { Cart } from "../Cart";
 
 const Navbar = () => {
   const [showLanguageDropdown, setShowLanguageDropdown] = useState(false);
   const [selectedLanguage, setSelectedLanguage] = useState("English");
+  const [showCartPopup, setShowCartPopup] = useState(false);
 
   const toggleLanguageDropdown = () => {
     setShowLanguageDropdown(!showLanguageDropdown);
@@ -18,6 +20,9 @@ const Navbar = () => {
     setShowLanguageDropdown(false); // Close the dropdown after selecting a language
   };
 
+  const toggleCartPopup = () => {
+    setShowCartPopup(!showCartPopup);
+  };
   return (
     <div className="px-44">
       <div className="flex items-center justify-center gap-64 border-t-2 border-b-2 border-[#C20009] py-5">
@@ -45,10 +50,18 @@ const Navbar = () => {
             />
 
           )}
-          <span>
-            <Link to="/cart">
-              <FiShoppingCart size={20} color="#BC1E2D" />
-            </Link>
+          <span className="relative">
+            <FiShoppingCart 
+              size={20}
+              color="#BC1E2D"
+              onClick={toggleCartPopup}
+              className="cursor-pointer" />
+
+              {showCartPopup && (
+              <div className="absolute z-10 right-0 mt-2">
+                <Cart onClose={toggleCartPopup} />
+              </div>
+            )}
           </span>
           <Link to="/Signup" ><span>
             <LuUser2 size={20} color="#BC1E2D" />

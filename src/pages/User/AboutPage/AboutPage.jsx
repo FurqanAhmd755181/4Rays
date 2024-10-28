@@ -16,7 +16,7 @@ function AboutPage() {
                         more <span className="text-[#C10A28]">pleasant</span> and more <span
                             className="text-[#C10A28]">productive.</span></p>
                 </div>
-                <div className="mt-8 w-4/6">
+                <div className="mt-12 w-4/6">
                     <p className="text-[#302F2F] text-[20px] text-center">4 Rays is the AI-powered platform for
                         work
                         bringing all of

@@ -1,36 +1,25 @@
 import React from "react";
-import laptop from "../../../assets/MacBook.png";
+import laptop from "../../../assets/Maccbook.svg";
 import rectangle from "../../../assets/Rectangle 16.png";
 import x from "../../../assets/Group 31.png";
 import crypto from "../../../assets/Crypto.png";
 import rays from "../../../assets/4 Rays.png";
+import multiplesvg from "../../../assets/multiplepic.svg";
 
 const ShowCase = () => {
   return (
-    <div className=" w-screen relative">
-      <div className="flex flex-col gap-[12rem]  px-44">
-        <h3 className="text-[30px] font-extrabold pl-20">
+    <div className="relative">
+      <div className="flex flex-col">
+        <h3 className="text-[30px] font-extrabold pl-20 mb-12">
           Lorem ipsum dolor sit amet,const
         </h3>
         <div className="flex justify-between">
-          <div className="relative">
-            <img src={laptop} alt="" className="z-10 w-[508px] h-[293px]" />
-            <img
-              src={x}
-              alt=""
-              className="absolute top-5 -right-[14rem] z-10 w-[295px] h-[258px]"
-            />
+          <div className="basis-3/4">
+            <img width="800" height="300" src={multiplesvg} />
           </div>
 
-          {/* suppose this div inside above div  */}
-          <img
-            src={rectangle}
-            alt=""
-            className="absolute top-[19rem] left-0 -z-20 w-[830px] h-[239px]"
-          />
-
-          <div className="flex flex-col gap-2 w-[350px]">
-            <div className="w-[200px] flex  rounded-full self-end items-center gap-4 shadow-lg px-4 py-2 bg-white">
+          <div className="flex flex-col gap-2 basis-3/4">
+            <div className=" flex  rounded-full self-end items-center gap-4 shadow-lg px-4 py-2 bg-white">
               <p className="text-[14px] text-[#CC252D] font-[600]">
                 Lorem Ipsum Do
               </p>
@@ -65,7 +54,7 @@ const ShowCase = () => {
               </div>
             </div>
           </div>
-            <img src={rays} alt="" className="absolute right-0 -bottom-[15rem]"/>
+          <img src={rays} alt="" className="absolute right-0 -bottom-[15rem]" />
         </div>
       </div>
     </div>

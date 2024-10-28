@@ -1,5 +1,6 @@
 import React from "react";
 import X from "../../../assets/Group 81.png";
+import { FiSend } from "react-icons/fi";
 
 const GetInTouch = () => {
   return (
@@ -26,11 +27,14 @@ const GetInTouch = () => {
         </div>
       </div>
       <div className=" mt-auto relative">
-        <input
-          type="text"
-          placeholder="Write a message"
-          className="w-[527px] h-[122px] px-4 py-3 rounded-lg text-gray-700 placeholder-gray-400 bg-white border shadow-lg border-gray-200"
-        />
+      <div className="flex items-center w-full max-w-md bg-white rounded-2xl shadow-md overflow-hidden">
+          <input
+            type="text"
+            placeholder="Write a message"
+            className=" p-4 text-gray-700 focus:outline-none w-[527px] h-[122px]"
+          />
+            <FiSend  className='text-[#C10A28] mr-5'/>
+        </div>
         <img src={X} alt="" className="absolute bottom-0 -z-10 -left-[10rem]"/>
       </div>
     </div>

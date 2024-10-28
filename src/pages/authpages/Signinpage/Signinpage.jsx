@@ -37,7 +37,7 @@ const SignInPage = () => {
       </div>
 
       {/* Sign-in form */}
-      <div className="relative z-10 w-full max-w-md bg-gray-50 bg-opacity-80 p-10 rounded-lg shadow-lg">
+      <div className="relative z-10 max-w-[554px]  h-[554px]  bg-gray-50 bg-opacity-80 p-10 rounded-lg shadow-lg">
   <div className="flex justify-center mb-6">
     <img src={logo} alt="Logo" className="w-20 h-20" />
   </div>
@@ -47,10 +47,10 @@ const SignInPage = () => {
     <div className="relative">
       <FaUser className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500" />
       <input
-        type="text"
-        placeholder="Username"
-        className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400"
-      />
+  type="text"
+  placeholder="Username"
+  className="w-full pl-10 pr-4 py-2  border border-gray-500 rounded-3xl focus:outline-none focus:ring-2 bg-transparent"
+/>
     </div>
 
     <div className="relative">
@@ -58,23 +58,24 @@ const SignInPage = () => {
       <input
         type="password"
         placeholder="Password"
-        className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400"
+        className="w-full pl-10 pr-4 py-2 border rounded-2xl  border-gray-500  focus:outline-none focus:ring-2 bg-transparent"
       />
     </div>
 
     <div className="flex items-center">
-      <input type="checkbox" id="staySignedIn" className="mr-2" />
-      <label htmlFor="staySignedIn" className="text-gray-600">Stay signed in</label>
+    <input type="checkbox" id="staySignedIn" className="mr-2 bg-transparent" />
+
+      <label htmlFor="staySignedIn" className="text-gray-500">Stay signed in</label>
     </div>
 <Link to="/">
-    <button type="submit" className="w-full py-2 bg-red-600 text-white font-bold rounded-md hover:bg-red-700">
+    <button type="submit" className="w-full py-2 bg-[#CA2222] text-white font-bold rounded-2xl hover:bg-red-700">
       Sign in
     </button>
     </Link>
   </form>
 
   <p className="text-center mt-4 text-gray-600">
-    Don’t have an account? <a href="/signup" className="text-red-500 hover:underline">Sign up now</a>
+    Don’t have an account? <Link to="/sign-up"  className="text-[#CA2222] hover:underline">Sign up now</Link>
   </p>
 </div>
 

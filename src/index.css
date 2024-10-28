@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 .line-clamp-2 {
   display: -webkit-box; /* Use the WebKit box model */
   -webkit-box-orient: vertical; /* Vertical orientation */
