@@ -1,5 +1,5 @@
 import React from "react";
-import laptop from "../../../assets/MacBook.png";
+import laptop from "../../../assets/Maccbook.svg";
 import rectangle from "../../../assets/Rectangle 16.png";
 import x from "../../../assets/Group 31.png";
 import crypto from "../../../assets/Crypto.png";
@@ -65,7 +65,7 @@ const ShowCase = () => {
               </div>
             </div>
           </div>
-            <img src={rays} alt="" className="absolute right-0 -bottom-[15rem]"/>
+          <img src={rays} alt="" className="absolute right-0 -bottom-[15rem]" />
         </div>
       </div>
     </div>

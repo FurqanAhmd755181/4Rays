@@ -1,5 +1,5 @@
 import React from "react";
-import fourrays from "../../../assets/FourRays.png";
+import fourrays from "../../../assets/FourRaysLogo.svg";
 import { Link } from "react-router-dom";
 import blood_splash from "../../../assets/blood_splash.svg";
 const Footer = () => {
