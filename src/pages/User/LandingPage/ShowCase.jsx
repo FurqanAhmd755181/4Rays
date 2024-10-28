@@ -7,7 +7,7 @@ import rays from "../../../assets/4 Rays.png";
 
 const ShowCase = () => {
   return (
-    <div className=" w-screen relative">
+    <div className="relative">
       <div className="flex flex-col gap-[12rem]  px-44">
         <h3 className="text-[30px] font-extrabold pl-20">
           Lorem ipsum dolor sit amet,const

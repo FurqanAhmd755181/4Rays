@@ -3,7 +3,7 @@ import crypto from "../../../assets/Crypto.png";
 
 const OurFeatures = () => {
   return (
-    <div className=" w-screen relative">
+    <div className=" relative">
       <div className="flex flex-col gap-1 px-44">
         <div className="w-[200px] flex  rounded-full  items-center gap-4 shadow-lg px-4 py-2 bg-white">
           <p className="text-[14px] text-[#CC252D] font-[600]">
