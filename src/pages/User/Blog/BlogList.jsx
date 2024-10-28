@@ -177,26 +177,10 @@ const BlogList = () => {
         "Gaming Console",
         "Camera & Photo",
   ];
-  const [selectedCategory, setSelectedCategory] = useState(categories[0]); // Default selected category
 
   return (
     <div>
-      <div className="bg-[#F2F4F5] flex items-center gap-3 px-[120px] p-3">
-        <div className="flex gap-2 items-center">
-          <AiOutlineHome color="#5F6C72" />
-          <p className="text-[#5F6C72]">Home</p>
-        </div>
-        <div className="flex gap-3 items-center">
-          <FaAngleRight color="#5F6C72" />
-          <p className="text-[#5F6C72]">Pages</p>
-        </div>
-        <div className="flex gap-3 items-center">
-          <FaAngleRight color="#5F6C72" />
-          <p className="text-[#5F6C72]">Blog</p>
-//           <p className="text-[#0B5D51]">Blog</p>
-        </div>
-      </div>
-
+     
       <div className="grid grid-cols-12 gap-10 px-[120px] mt-[50px]">
         <div className="col-span-4 flex flex-col gap-4">
           <div className="flex flex-col border rounded-md p-3">
@@ -345,7 +329,7 @@ const BlogList = () => {
           aria-haspopup="true"
           aria-expanded={isOpen}
         >
-          Popular Blogs
+          Most Popular 
           <IoIosArrowDown
             className="-mr-1 ml-2 h-5 w-5"
             aria-hidden="true"
