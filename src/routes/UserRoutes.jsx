@@ -5,6 +5,7 @@ import AccountAuth from "../pages/User/AccountPages/AccountAuth.jsx";
 import MyAccountBody from "../pages/User/AccountPages/MyAccountBody.jsx";
 import SignInPage from "../pages/authpages/Signinpage/Signinpage.jsx";
 import SignUpPage from "../pages/authpages/Signuppage/SignUpPage.jsx";
+import { Error } from "../pages/User/Layout/Error.jsx";
 
 const UserRoutes = [
 
@@ -27,7 +28,11 @@ const UserRoutes = [
     {
         path : "/MyAccount",
         element : <MyAccountBody />
-    }
+    },
+    {
+        path: "/error",
+        element: <Error />
+    },
 ]
 
 export default UserRoutes;
