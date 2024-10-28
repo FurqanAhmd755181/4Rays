@@ -1,7 +1,7 @@
 import React from "react";
 import FourRays from "../../../assets/FourRays.png";
 import Mobile from "../../../assets/Mobile.png";
-import arrowRight from "../../../assets/arrowRight.png";
+import arrowRight from "../../../assets/ArrowRight.svg"
 
 const BillingCart = () => {
   const cartItems = [
