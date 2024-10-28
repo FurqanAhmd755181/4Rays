@@ -3,8 +3,9 @@ import PricingPage from "../pages/User/pricingpage/PricingPage.jsx";
 import AboutPage from "../pages/User/AboutPage/AboutPage.jsx";
 import AccountAuth from "../pages/User/AccountPages/AccountAuth.jsx";
 import MyAccountBody from "../pages/User/AccountPages/MyAccountBody.jsx";
-import SignInPage from "../pages/authpages/Signinpage/Signinpage.jsx";
-import SignUpPage from "../pages/authpages/Signuppage/SignUpPage.jsx";
+
+
+import BlogList from "../pages/User/Blog/BlogList.jsx";
 
 const UserRoutes = [
 
@@ -27,6 +28,10 @@ const UserRoutes = [
     {
         path : "/MyAccount",
         element : <MyAccountBody />
+    },
+    {
+        path : "/bloglist",
+        element : <BlogList />
     }
 ]
 
