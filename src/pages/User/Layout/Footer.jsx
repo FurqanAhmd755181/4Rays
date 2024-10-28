@@ -22,7 +22,7 @@ const Footer = () => {
               <nav className="flex items-center  justify-center gap-10">
                   <Link>Blogs</Link>
                   <Link>About Us</Link>
-                  <Link>Customer Support</Link>
+                  <Link to="/CustomerSuport">Customer Support</Link>
                   <Link>Purchase</Link>
               </nav>
           </div>

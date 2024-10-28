@@ -5,6 +5,7 @@ import AccountAuth from "../pages/User/AccountPages/AccountAuth.jsx";
 import MyAccountBody from "../pages/User/AccountPages/MyAccountBody.jsx";
 import SignInPage from "../pages/authpages/Signinpage/Signinpage.jsx";
 import SignUpPage from "../pages/authpages/Signuppage/SignUpPage.jsx";
+import CustomerSupport from "../pages/User/CustomerSupport/CustomerSupport.jsx";
 
 const UserRoutes = [
 
@@ -27,6 +28,10 @@ const UserRoutes = [
     {
         path : "/MyAccount",
         element : <MyAccountBody />
+    },
+    {
+        path : "/CustomerSuport",
+        element : <CustomerSupport />
     }
 ]
 
