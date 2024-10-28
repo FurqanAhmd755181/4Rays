@@ -8,6 +8,7 @@ export default {
     extend: {
       colors: {
         customRed: 'rgba(188, 30, 45, 1)',
+        customPeach: 'rgba(255, 231, 214, 1)'
       },
     },
   },
