@@ -24,6 +24,8 @@ const BlogList = () => {
   };
   const [isOpen, setIsOpen] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
+  const [searchTerm, setSearchTerm] = useState("");
+  const [isNotFound, setIsNotFound] = useState(false);
   const blogsPerPage = 8;
 
   const toggleDropdown = () => {
@@ -166,6 +168,27 @@ const BlogList = () => {
       setCurrentPage(currentPage - 1);
     }
   };
+
+  const handleSearch = () => {
+    const foundBlog = newsData.find((blog) =>
+      blog.headline.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+
+    if (foundBlog) {
+      setIsNotFound(false);
+      navigate(`/blogdetails/${foundBlog.id}`);
+    } else {
+      setIsNotFound(true);
+      navigate("/error");
+    }
+  };
+
+  const handleKeyDown = (event) => {
+    if (event.key === "Enter") {
+      handleSearch();
+    }
+  };
+
   const categories  = [
     "All",
         "Electronics Devices",
@@ -313,11 +336,14 @@ const BlogList = () => {
       <input
         type="text"
         placeholder="Search..."
+        value={searchTerm}
+        onChange={(e) => setSearchTerm(e.target.value)}
+        onKeyDown={handleKeyDown} // Trigger search on Enter key
         className="flex-grow h-full px-2 outline-none border-none placeholder-gray-400" // Added height and padding
       />
-      <button className="text-gray-600 h-full flex items-center justify-center px-2">
-        <AiOutlineSearch />
-      </button>
+        <button onClick={handleSearch} className="text-gray-600 h-full flex items-center justify-center px-2">
+          <AiOutlineSearch />
+        </button>
     </div>
 
     <div className="relative inline-block text-left">
