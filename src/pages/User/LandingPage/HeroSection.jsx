@@ -1,7 +1,7 @@
 import React from "react";
 import crypto from "../../../assets/Crypto.png";
-import mobile from "../../../assets/Mobile.png";
-import x from "../../../assets/X.png";
+import mobile from "../../../assets/Mobile.svg";
+import BG from "../../../assets/BG 1.svg";
 import { FaRegCirclePlay } from "react-icons/fa6";
 const HeroSection = () => {
   return (
@@ -43,7 +43,7 @@ const HeroSection = () => {
 
       <div className="col-span-6 px-24">
         <img src={mobile} width={280} height={600} alt="" />
-        <img src={x} alt="" />
+        <img src={BG} alt="" />
       </div>
     </div>
   );

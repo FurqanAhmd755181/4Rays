@@ -1,18 +1,17 @@
 import React from "react";
-import fourrays from "../../../assets/FourRays.png";
+import fourrays from "../../../assets/FourRaysLogo.svg";
 import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div className="mt-14 bg-black flex flex-col items-center justify-center text-white text-center gap-8">
       <div className="flex flex-col items-center justify-center">
-      <img 
-  src={fourrays} 
-  width={250} 
-  height={250} 
-  alt="Logo" 
-  className="brightness-100 contrast-130 saturate-500 shadow-lg"
-/>
-
+        <img
+          src={fourrays}
+          width={250}
+          height={250}
+          alt="Logo"
+          className="brightness-100 contrast-130 saturate-500 shadow-lg"
+        />
       </div>
       <div>
         <nav className="flex items-center  justify-center gap-10">
