@@ -1,78 +1,36 @@
-import React, { useState } from "react";
+import React from "react";
+
+import fourrays from "../../../assets/FourRaysLogo.svg";
+import Navbar from "./Navbar.jsx";
 import { Link } from "react-router-dom";
-import { FaChevronDown } from "react-icons/fa";
-import { FiShoppingCart } from "react-icons/fi";
-import { LuUser2 } from "react-icons/lu";
-import Popup from "./Popup";
-import { Cart } from "../Cart";
 
-const Navbar = () => {
-  const [showLanguageDropdown, setShowLanguageDropdown] = useState(false);
-  const [selectedLanguage, setSelectedLanguage] = useState("English");
-  const [showCartPopup, setShowCartPopup] = useState(false);
-
-  const toggleLanguageDropdown = () => {
-    setShowLanguageDropdown(!showLanguageDropdown);
-  };
-
-  const selectLanguage = (language) => {
-    setSelectedLanguage(language);
-    setShowLanguageDropdown(false);
-  };
-
-  const toggleCartPopup = () => {
-    setShowCartPopup(!showCartPopup);
-  };
-
+const Header = () => {
   return (
-    <div className="px-44">
-      <div className="flex items-center justify-center gap-64 border-t-2 border-b-2 border-[#C20009] py-5">
-        <nav className="flex items-center gap-20">
-          <Link className="hover:text-[#C20009]">Features</Link>
-          <Link className="hover:text-[#C20009]">Resources</Link>
-          <Link to="/pricing" className="hover:text-[#C20009]">Prices</Link>
-          <Link to="/about" className="hover:text-[#C20009]">About</Link>
-        </nav>
-
-        <div className="flex items-center gap-3 relative">
-          <div
-            className="flex items-center gap-2 cursor-pointer"
-            onClick={toggleLanguageDropdown}
+    <div className="flex flex-col gap-3">
+      <div className="px-28 py-5 flex items-center justify-between bg-black">
+        <p className="text-white">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+        <div className="flex items-center gap-3">
+          <Link to="/sign-in" className="text-white">
+            Sign in{" "}
+          </Link>
+          <Link
+            to="/sign-up"
+            className="text-white bg-[#C20009] rounded-full px-6 py-2"
           >
-            <p>{selectedLanguage === "English" ? "Eng" : "Spa"}</p>
-            <FaChevronDown />
-          </div>
-
-          {showLanguageDropdown && (
-            <Popup
-              selectedLanguage={selectedLanguage}
-              selectLanguage={selectLanguage}
-            />
-          )}
-
-          <span className="relative">
-            <FiShoppingCart
-              size={20}
-              color="#BC1E2D"
-              onClick={toggleCartPopup}
-              className="cursor-pointer"
-            />
-
-            {showCartPopup && (
-              <div className="absolute z-10 right-0 mt-2">
-                <Cart onClose={toggleCartPopup} />
-              </div>
-            )}
-          </span>
-          <Link to="/Signup">
-            <span>
-              <LuUser2 size={20} color="#BC1E2D" />
-            </span>
+            Sign up{" "}
           </Link>
         </div>
+      </div>
+      <div className="flex items-center justify-center">
+        <img src={fourrays} alt="" />
+      </div>
+      <div>
+        <Navbar />
       </div>
     </div>
   );
 };
 
-export default Navbar;
+export default Header;
