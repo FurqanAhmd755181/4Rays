@@ -152,14 +152,14 @@ const CustomerSupport = () => {
                 Call us now
               </p>
               <p className="text-[#5F6C72] text-[14px] text-left font-poppins font-normal mb-2">
-                we are available online from 9:00 AM to 5:00 PM (GMT+5:45) Talk
-                with us now
+                we are available online from 9:00 AM to 5:00 PM <br/>(GMT95:45) Talk
+                with use now
               </p>
-              <p className="text-[24px] font-poppins font-medium">
+              <p className="text-[24px] mb-[6px] font-poppins font-medium">
                 +1-202-555-0126
               </p>
 
-              <button className="mt-4 bg-[#2DB224] font-public text-[14px] text-white px-[24px] w-[152px] h-[48px] py-2 rounded-full font-bold flex items-center">
+              <button className="mt-4 bg-[#2DB224] font-public text-[14px] text-white px-[24px] mb-[6px] w-[152px] h-[48px] py-2 rounded-full font-bold flex items-center">
                 CALL NOW
                 <img src="/ArrowRight.svg" alt="Arrow Right" className="ml-2" />
               </button>
@@ -173,13 +173,14 @@ const CustomerSupport = () => {
 
             {/* Text Content */}
             <div className="flex flex-col items-start">
-              <p className="text-[#191C1F] text-[18px] font-poppins font-semibold">
+              <p className="text-[#191C1F] text-[18px] mb-[6px] font-poppins font-semibold">
                 Chat with us
               </p>
               <p className="text-[#5F6C72] text-[14px] text-left font-poppins font-normal mb-2">
-                We are available from 9:00 AM to 6:00 PM (GST+3)
+                We are available from 9:00 AM to 5:00 PM <br/>(GMT95:45) Talk
+                with use now
               </p>
-              <p className="text-[24px] font-poppins font-medium">
+              <p className="text-[24px] mb-[6px] font-poppins font-medium">
                 Support@clicon.com
               </p>
 
