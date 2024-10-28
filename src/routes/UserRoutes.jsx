@@ -5,6 +5,8 @@ import AccountAuth from "../pages/User/AccountPages/AccountAuth.jsx";
 import MyAccountBody from "../pages/User/AccountPages/MyAccountBody.jsx";
 import SignInPage from "../pages/authpages/Signinpage/Signinpage.jsx";
 import SignUpPage from "../pages/authpages/Signuppage/SignUpPage.jsx";
+import BillingForm from "../pages/User/Billing/BillingForm.jsx";
+import BillingBody from "../pages/User/Billing/BillingBody.jsx";
 import { Cart } from "../pages/User/Cart.jsx";
 
 const UserRoutes = [
@@ -34,6 +36,11 @@ const UserRoutes = [
     {
         path : "/MyAccount",
         element : <MyAccountBody />
+    }
+    ,
+    {
+        path : "/checkout",
+        element : <BillingBody />
     }
 
 ]
