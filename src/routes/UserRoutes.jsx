@@ -4,13 +4,13 @@ import AboutPage from "../pages/User/AboutPage/AboutPage.jsx";
 import AccountAuth from "../pages/User/AccountPages/AccountAuth.jsx";
 import MyAccountBody from "../pages/User/AccountPages/MyAccountBody.jsx";
 import BlogList from "../pages/User/Blog/BlogList.jsx";
-import SignInPage from "../pages/authpages/Signinpage/Signinpage.jsx";
-import SignUpPage from "../pages/authpages/Signuppage/SignUpPage.jsx";
+// import SignInPage from "../pages/authpages/Signinpage/Signinpage.jsx";
+// import SignUpPage from "../pages/authpages/Signuppage/SignUpPage.jsx";
 
 import CustomerSupport from "../pages/User/CustomerSupport/CustomerSupport.jsx";
 
 import BillingBody from "../pages/User/Billing/BillingBody.jsx";
-import { Cart } from "../pages/User/Cart.jsx";
+// import { Cart } from "../pages/User/Cart.jsx";
 import SubscriptionConfirmation from "../pages/User/Subscription/Subscription.jsx";
 import { Error } from "../pages/User/Blog/Error.jsx";
 
@@ -57,7 +57,6 @@ const UserRoutes = [
     {
         path: "/error",
         element: <Error />
-
     }
 
 ]
